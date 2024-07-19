@@ -67,14 +67,20 @@ document.addEventListener('DOMContentLoaded', function(){
                 // Adiciona evento ao botão de remoção
                 filme.querySelector('.filmes__list__item__button-remove').addEventListener('click', function() {
                     containerFavoritos.removeChild(filme);
+
+                    if (containerFavoritos.childElementCount == 0){
+                        document.querySelector('.minha-lista').querySelector('p').style.display = 'block';
+                    }
                 });
 
+                if (containerFavoritos.childElementCount == 0){
+                    document.querySelector('.minha-lista').querySelector('p').style.display = 'none';
+                }
                 containerFavoritos.appendChild(filme);
+
             } else {
                 alert('Esse filme já está na sua lista!');
             }
-
-            console.log(containerFavoritos);
         });
     }
 
