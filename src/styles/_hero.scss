@@ -1,0 +1,24 @@
+@use 'variaveis';
+
+.hero{
+    &__fundo{
+        max-width: 100%;
+        position: relative;
+    }
+
+    &__conteudo{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        display: block;
+        max-width: 40%;
+        padding: 16px;
+        background-color: rgba(variaveis.$corDeFundo, 0.3);
+
+        p{
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+    }
+
+}

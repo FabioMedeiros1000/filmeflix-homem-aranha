@@ -1,0 +1,73 @@
+@use 'header';
+@use 'hero';
+@use 'variaveis';
+@use 'filmes';
+@use 'minha-lista';
+
+@font-face{
+    font-family: NetflixSans;
+    src: url('../../assets/fonts/NetflixSans-Regular.otf');
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: NetflixSans;
+}
+
+body{
+    background-color: variaveis.$corDeFundo;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title-big{
+    font-family: NetflixSans;
+    font-size: 36px;
+    color: variaveis.$corDaLetra;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.title{
+    font-family: NetflixSans;
+    font-size: 18px;
+    color: variaveis.$corDaLetra;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.text{
+    font-family: NetflixSans;
+    font-size: 16px;
+    color: variaveis.$corDaLetra;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-hero{
+    background-color: variaveis.$corDeFundo;
+    color: variaveis.$corDaLetra;
+    padding: 0.8rem 2rem;
+    letter-spacing: 3px;
+
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+    
+    &:hover{
+        background-color: rgba(variaveis.$corDeFundo, 0.8);
+    }
+}
+

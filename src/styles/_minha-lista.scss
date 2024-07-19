@@ -1,0 +1,9 @@
+@use 'variaveis';
+
+.minha-lista{
+    padding-bottom: 32px;
+
+    .title-big{
+        color: variaveis.$corDaMarca;
+    }
+}

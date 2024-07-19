@@ -1,0 +1,102 @@
+@use 'variaveis';
+
+.filmes{
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &__atores{
+        display: flex;
+        justify-content: center;
+
+        &__ator{
+            margin-right: 16px;
+            padding-bottom: 8px;
+            border-bottom: 5px solid transparent;
+            cursor: pointer;
+
+            &--is-active{
+                border-color: variaveis.$corDaMarca;
+            }
+        }
+    }
+
+    h2{
+        color: variaveis.$corDaMarca;
+    }
+
+    &__list{
+        display: none;
+        grid-template-columns: repeat(3, 1fr);
+
+        &--is-active{
+            display: grid;
+        }
+
+        &__item{
+            &__container-img{
+                position: relative;
+                width: 100%;
+                padding-bottom: 100%; 
+                overflow: hidden;
+            }
+    
+            &__img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 90%;
+                height: 90%;
+                object-fit: cover; 
+                margin-top: 16px;
+            }
+
+            &__button{
+                position: absolute;
+                top: calc(80%);
+                padding: 12px;
+                background-color: variaveis.$corDaLetra;
+                border-radius: 50%;
+                visibility: hidden;
+
+                img{
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                &-play{
+                    left: 5%;
+                }
+
+                &-add{
+                    left: 25%;
+                }
+
+                &-remove{
+                    left: 25%;
+                }
+
+                &--active{
+                    visibility: visible;
+                }
+            }            
+    
+            h3{
+                margin-top: 24px;
+            }
+        }
+    }
+
+}
+
+.filmes__list__item__container-img:hover .filmes__list__item__button {
+    visibility: visible;
+}
+
+.filmes__list__item__img {
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o zoom */
+}
+
+.filmes__list__item__container-img:hover .filmes__list__item__img {
+    transform: scale(1.2); /* Ajuste o fator de escala conforme necessário */
+}

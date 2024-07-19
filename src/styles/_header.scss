@@ -1,0 +1,39 @@
+@use 'variaveis';
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: variaveis.$corDeFundo;
+
+    > .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        color: variaveis.$corDaMarca;
+        font-size: 32px;
+    }
+
+    &__list{
+        &__item{
+            list-style: none;
+            display: inline;
+            margin-left: 10px;
+            
+            a{
+                text-decoration: none;
+                color: variaveis.$corDaLetra;
+
+                &:hover{
+                    color: variaveis.$corDaMarca;
+                }
+            }
+        }
+    }
+}
