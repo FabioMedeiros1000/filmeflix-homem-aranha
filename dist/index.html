@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmeflix</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__logo">Filmeflix</h1>
+            <ul class="header__list">
+                <li class="header__list__item">
+                    <a href="#hero">Início</a>
+                </li>
+                <li class="header__list__item">
+                    <a href="#filmes">Filmes</a>
+                </li>
+                <li class="header__list__item">
+                    <a href="#lista">Minha lista</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero" id="hero">
+        <img class="hero__fundo" src="../dist/images/hero-fundo-pc.png" alt="Imagem do filme do espetacular homem-aranha">
+        <div class="hero__conteudo">
+            <h1 class="title-big">
+                O espetacular homem aranha
+            </h1>
+            <p class="text">
+                Andrew Garfield dá vida a peter parker, um adolescente que, entre a descoberta de segredos de família
+                e de novos poderes, enfrenta um conhecido arqui-inimigo.
+            </p>
+            <button class="button-hero title" type="button">
+                <div class="button-hero__container">
+                    <img src="../dist/images/icon-play.svg" alt="Ícone de play">
+                    <span>Assistir</span>
+                </div>
+            </button>
+        </div>
+    </section>
+    <section class="filmes" id="filmes">
+        <h2 class="title-big container">
+            Filmes
+        </h2>
+        <div class="filmes__atores">
+            <h3 data-tab-button="maguire" class="filmes__atores__ator title">Tobey Maguire</h3>
+            <h3 data-tab-button="andrew" class="filmes__atores__ator filmes__atores__ator--is-active title">Andrew Garfield</h3>
+            <h3 data-tab-button="holland" class="filmes__atores__ator title">Tom Holland</h3>
+        </div>
+        <div class="container">
+            <div data-tab-id="maguire" class="filmes__list">
+                <div class="filmes__list__item">
+                    <h3 class="title">Homem-aranha</h3>
+                    <div class="filmes__list__item__container-img">
+                        <img class="filmes__list__item__img" src="../dist/images/spidey1-maguire.jpg" alt="Homem-aranha 1 de tobey maguire">
+                        <button class="text filmes__list__item__button filmes__list__item__button-play" type="button">
+                            <img src="../dist/images/icon-play-black.svg" alt="Ícone de play">   
+                        </button>
+                        <button class="text filmes__list__item__button filmes__list__item__button-add" type="button">
+                            <img src="../dist/images/plus-black.svg" alt="Ícone de play">   
+                        </button>
+                    </div>
+                </div>
+                <div class="filmes__list__item">
+                    <h3 class="title">Homem-aranha 2</h3>
+                    <div class="filmes__list__item__container-img">
+                        <img class="filmes__list__item__img" src="../dist/images/spidey2-maguire.jpg" alt="Homem-aranha 2 de tobey maguire">
+                        <button class="text filmes__list__item__button filmes__list__item__button-play" type="button">
+                            <img src="../dist/images/icon-play-black.svg" alt="Ícone de play">   
+                        </button>
+                        <button class="text filmes__list__item__button filmes__list__item__button-add" type="button">
+                            <img src="../dist/images/plus-black.svg" alt="Ícone de play">   
+                        </button>
+                    </div>
+                </div>
+                <div class="filmes__list__item">
+                    <h3 class="title">Homem-aranha 3</h3>
+                    <div class="filmes__list__item__container-img">
+                        <img class="filmes__list__item__img" src="../dist/images/spidey3-maguire.jpg" alt="Homem-aranha 3 de tobey maguire">
+                        <button class="text filmes__list__item__button filmes__list__item__button-play" type="button">
+                            <img src="../dist/images/icon-play-black.svg" alt="Ícone de play">   
+                        </button>
+                        <button class="text filmes__list__item__button filmes__list__item__button-add" type="button">
+                            <img src="../dist/images/plus-black.svg" alt="Ícone de play">   
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div data-tab-id="andrew" class="filmes__list filmes__list--is-active">
+                <div class="filmes__list__item">
+                    <h3 class="title">O espetacular homem aranha</h3>
+                    <div class="filmes__list__item__container-img">
+                        <img class="filmes__list__item__img" src="../dist/images/AmazingSpidey1-andrew.jpg" alt="Homem-aranha 3 de andrew garfield">
+                        <button class="text filmes__list__item__button filmes__list__item__button-play" type="button">
+                            <img src="../dist/images/icon-play-black.svg" alt="Ícone de play">   
+                        </button>
+                        <button class="text filmes__list__item__button filmes__list__item__button-add" type="button">
+                            <img src="../dist/images/plus-black.svg" alt="Ícone de play">   
+                        </button>
+                    </div>
+                </div>
+                <div class="filmes__list__item">
+                    <h3 class="title">O espetacular homem aranha 2</h3>
+                    <div class="filmes__list__item__container-img">
+                        <img class="filmes__list__item__img" src="../dist/images/AmazingSpidey2-andrew.jpg" alt="Homem-aranha 2 de andrew garfield">
+                        <button class="text filmes__list__item__button filmes__list__item__button-play" type="button">
+                            <img src="../dist/images/icon-play-black.svg" alt="Ícone de play">   
+                        </button>
+                        <button class="text filmes__list__item__button filmes__list__item__button-add" type="button">
+                            <img src="../dist/images/plus-black.svg" alt="Ícone de play">   
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div data-tab-id="holland" class="filmes__list">
+                <div class="filmes__list__item">
+                    <h3 class="title">Homem aranha - De volta ao lar</h3>
+                    <div class="filmes__list__item__container-img">
+                        <img class="filmes__list__item__img" src="../dist/images/spidey_de-volta-ao-lar-holland.png" alt="Homem-aranha - de volta ao lar - Tom Holland">
+                        <button class="text filmes__list__item__button filmes__list__item__button-play" type="button">
+                            <img src="../dist/images/icon-play-black.svg" alt="Ícone de play">   
+                        </button>
+                        <button class="text filmes__list__item__button filmes__list__item__button-add" type="button">
+                            <img src="../dist/images/plus-black.svg" alt="Ícone de play">   
+                        </button>
+                    </div>
+                </div>
+                <div class="filmes__list__item">
+                    <h3 class="title">Homem aranha - Longe de casa</h3>
+                    <div class="filmes__list__item__container-img">
+                        <img class="filmes__list__item__img" src="../dist/images/spidey_longe-de-casa-holland.png" alt="Homem-aranha - Longe de casa - Tom Holland">
+                        <button class="text filmes__list__item__button filmes__list__item__button-play" type="button">
+                            <img src="../dist/images/icon-play-black.svg" alt="Ícone de play">   
+                        </button>
+                        <button class="text filmes__list__item__button filmes__list__item__button-add" type="button">
+                            <img src="../dist/images/plus-black.svg" alt="Ícone de play">   
+                        </button>
+                    </div>
+                </div>
+                <div class="filmes__list__item">
+                    <h3 class="title">Homem aranha - Sem volta para casa</h3>
+                    <div class="filmes__list__item__container-img">
+                        <img class="filmes__list__item__img" src="../dist/images/spidey_sem-volta-para-casa-holland.png" alt="Homem-aranha - Sem volta para casa">
+                        <button class="text filmes__list__item__button filmes__list__item__button-play" type="button">
+                            <img src="../dist/images/icon-play-black.svg" alt="Ícone de play">   
+                        </button>
+                        <button class="text filmes__list__item__button filmes__list__item__button-add" type="button">
+                            <img src="../dist/images/plus-black.svg" alt="Ícone de play">   
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="minha-lista" id="lista">
+        <h2 class="title-big container">
+            Minha lista
+        </h2>
+        <p class="text container">
+            Adicione aqui os filmes que você planeja assistir depois!
+        </p>
+        <div class="container">
+            <div class="filmes__list filmes__list--is-active filmes__list__favoritos">
+            </div>
+        </div>
+    </section>
+    
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
