@@ -25,6 +25,10 @@ body{
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width: 768px){
+        width: 85%;
+    }
 }
 
 .title-big{
@@ -33,6 +37,10 @@ body{
     color: variaveis.$corDaLetra;
     letter-spacing: 2px;
     font-weight: bold;
+
+    @media (max-width: 768px){
+        font-size: 24px;
+    }
 }
 
 .title{
@@ -41,6 +49,10 @@ body{
     color: variaveis.$corDaLetra;
     letter-spacing: 1px;
     font-weight: bold;
+
+    @media (max-width: 768px){
+        font-size: 15px;
+    }
 }
 
 .text{
@@ -60,6 +72,14 @@ button{
     color: variaveis.$corDaLetra;
     padding: 0.8rem 2rem;
     letter-spacing: 3px;
+
+    @media (max-width: 768px){
+        position: absolute;
+        top: -60px;
+        left: 2px;
+        letter-spacing: 1px;
+        padding: 0.4rem 1rem;
+    }
 
     &__container{
         display: flex;

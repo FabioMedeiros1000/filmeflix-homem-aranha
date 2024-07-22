@@ -18,6 +18,10 @@
     &__logo{
         color: variaveis.$corDaMarca;
         font-size: 32px;
+
+        @media (max-width: 768px){
+            font-size: 24px;
+        }
     }
 
     &__list{
@@ -25,6 +29,10 @@
             list-style: none;
             display: inline;
             margin-left: 10px;
+
+            @media (max-width: 768px){
+                margin-left: 5px;
+            }
             
             a{
                 text-decoration: none;
