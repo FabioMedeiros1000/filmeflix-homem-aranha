@@ -31,7 +31,7 @@ Algumas tarefas foram automatizadas através do Gulp. Siga os passos a seguir:
 
 1. Clone o repositório:
     ```bash
-    git clone [<URL_DO_REPOSITORIO>](https://github.com/FabioMedeiros1000/filmeflix-homem-aranha/tree/main)
+    git clone https://github.com/FabioMedeiros1000/filmeflix-homem-aranha/tree/main
     ```
 
 2. Certifique-se de ter o Node.js instalado em sua máquina.
